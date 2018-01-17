@@ -1,0 +1,100 @@
+/**************************************************************************************************
+ *
+ *  @Section: Header
+ *
+***************************************************************************************************/
+$header-height: 43vw;
+$header-min-height: 600px;
+
+.site-header {
+	position: relative;
+	width: 100%;
+	height: $header-height;
+	min-height: $header-min-height;
+
+	&:before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100vh;
+		min-height: $header-min-height;
+		background-image: url("https://2017.managua.wordcamp.org/files/2017/04/banner-bkg.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	hgroup {
+		position: absolute;
+		display: inline-block;
+		text-align: center;
+		@include centered-xy;
+		top: 42%;
+	}
+
+	.site-title {
+		display: block;
+
+		a {
+			display: block;
+			max-width: 324px;
+			min-width: 150px;
+			max-height: 324px;
+			min-height: 150px;
+			width: 25vw;
+			height: 25vw;
+			margin: 0 auto;
+			background-image: url("https://2017.managua.wordcamp.org/files/2017/04/wcmga17-logo.png");
+			text-indent: -9999px;
+          	white-space: nowrap;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
+	}
+
+	.site-description {
+		margin-top: 20px;
+		color: $black;
+		text-transform: uppercase;
+	}
+}
+
+.widget-area.front-page {
+	position: relative;
+
+	.registration-button {
+		position: absolute;
+		top: -150px;
+		@include centered-x;
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+
+	.site-header {
+
+		$header-height: 350px;
+		$header-min-height: auto;
+
+		height: $header-height;
+		min-height: $header-min-height;
+
+		&:before {
+			height: $header-height;
+			min-height: $header-min-height;
+			background-position: center left 20%;
+		}
+
+		.site-description { @include font-size(1.6); }
+	}
+
+	.widget-area.front-page {
+
+		.registration-button { top: -80px; }
+	}
+}

@@ -1,0 +1,48 @@
+/**************************************************************************************************
+ *
+ *  @Section: Footer
+ *
+***************************************************************************************************/
+.site-footer {
+	position: relative;
+	display:  block;
+	width: 100%;
+	padding: 80px 0 20px;
+	background-color: $white;
+
+	#footer-widgets {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@extend .container;
+
+		.footer-widgets-block {
+			
+			&:first-child {  
+				flex-basis: auto;
+				width: 100%;
+
+				h1 { 
+					color: $third-color;
+					text-transform: uppercase;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+
+			.widget-title {
+				color: $black;
+				text-transform: uppercase;
+				font-weight: bold;
+				@include font-size(1.4);
+
+
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+	
+}

@@ -1,0 +1,183 @@
+/**************************************************************************************************
+ *
+ *  @Section: Navigation
+ *
+***************************************************************************************************/
+.site-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $second-color;
+	z-index: 1050;
+
+	.assistive-text { display:  none; }
+
+	.menu-wordcamp-container{
+		@extend .container;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	    list-style-type: none;
+
+		li { margin: 0; }
+	}
+
+	#menu-wordcamp {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		@include transition;
+
+		> .menu-item {
+
+			a {
+				color: $white;
+				padding: 20px 15px;
+				text-transform: uppercase;
+				font-family: $font-heading;
+				@include font-size(1.2);
+
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration: none;
+					color: $light-second-color;
+				}
+			}
+
+			> .sub-menu {
+				display: none;
+				@include transition;
+			}
+
+			&.menu-item-has-children {
+
+
+				&:hover,
+				&:focus,
+				&:active {
+
+					> .sub-menu {
+						display: flex;
+						flex-direction: column;
+						align-items: stretch;
+						flex-wrap: nowrap;
+						position: absolute;
+						background-color: $main-color;
+						@include box-shadow;
+
+						.menu-item {
+							display: inline-block;
+							flex-grow: 1;
+						}
+
+						a { width: 100%;
+
+							&:hover,
+							&:focus,
+							&:active {
+								color: $light-main-color;
+								background-color: $dark-main-color;
+							}
+						}
+					}
+				}
+			}
+
+			&.get-tickets > a {
+				position: relative;
+				width: 82px;
+				&:before {
+					display: block;
+				    content: url(https://2017.managua.wordcamp.org/files/2017/04/tickets-here.png);
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 82px;
+				    height: 72px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+
+	.site-navigation {
+		position: absolute;
+		background-color: transparent;
+
+		.menu-toggle {
+			visibility: hidden;
+
+			&:after {
+				content: '\f0c9';
+				font-family: 'fontawesome';
+				visibility: visible;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				display: inline-block;
+				padding: 5px 10px;
+				color: $white;
+				background-color: rgba($white, 0.2);
+				z-index: 1050;
+				@include rounded(3px);
+				@include transition;
+			}
+
+			&.toggled-on {
+
+				&:after {
+					content: '\f00d';
+					@include rounded(50%);
+				}
+			}
+		}
+
+		.menu-wordcamp-container {
+			width: 100%;
+			position:  absolute;
+			top: 0;
+			left: 0;
+
+			#menu-wordcamp {
+				display: none;
+				background-color: $second-color;
+				padding: 50px 0;
+				flex-direction: column;
+				align-items: stretch;
+
+				> .menu-item {
+
+					a {
+						width:  100%;
+						padding: 10px 15px;
+					}
+
+					> .sub-menu {
+						position:  relative !important;
+						width:  100%;
+						display: block !important;
+						background-color: transparent !important;
+
+						> .menu-item { width:  100%;
+
+							a { padding: 8px 10px 8px 50px; }
+						}
+					}
+
+					&.get-tickets > a { width: 100%;
+
+						&:before { display: none; }
+					}
+				}
+			}
+		}
+	}
+}

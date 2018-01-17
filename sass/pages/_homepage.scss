@@ -1,0 +1,74 @@
+/**************************************************************************************************
+ *
+ *  @Section: Homepage
+ *
+***************************************************************************************************/
+#after-header-widgets {
+
+	&.front-page {
+		padding: 100px 15%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: space-around;
+		background-image: 	url("https://2017.managua.wordcamp.org/files/2017/04/before-content-bkg-left.png"),
+							url("https://2017.managua.wordcamp.org/files/2017/04/before-content-bkg-right.png");
+		background-repeat:  repeat-y, repeat-y;
+		background-position: left 0 top 0px, left 100% top 0px;
+		background-size: 310px, 310px;
+		background-attachment: fixed, fixed;
+		background-color: $white;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 70px;
+			background-color: $white;
+			-webkit-transform-origin: 0 0;
+			transform-origin: 0 0;
+			z-index: 1000;
+			@include transform(skewY(-1.5deg));
+		}
+	}
+
+	.widget {
+		text-align: center;
+		padding: 20px;
+
+		.boxes {
+
+			i { @include font-size(5); }
+
+			h2 {
+				color: $third-color;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			.btn { margin-top: 20px; }
+		}
+
+		&:first-child {
+			width: 1px;
+			height: 1px;
+			padding: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+
+	#after-header-widgets {
+
+		&.front-page {
+			display: block;
+			background-image: none;
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+{
+  "name": "wcmga2017",
+  "version": "1.0.0",
+  "description": "Custom CSS for WordCamp Managua 2017",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpnicaragua/WCMGA2017-Custom-CSS.git"
+  },
+  "author": "WPNicaragua Community",
+  "license": "ISC",
+  "homepage": "https://github.com/wpnicaragua/WCMGA2017-Custom-CSS",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-newer": "^1.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^1.2.2"
+  }
+}

@@ -1,0 +1,35 @@
+//## Variables.
+
+// Base colors.
+$white:							#FFFFFF;
+$black:							#030303;
+$gray:							#8d949c;
+$light-gray:					#f4f4f4;
+$dark-gray:						#22272d;
+$border-gray:					#d8d8d8;
+
+// Custom colors.
+$main-color:					#009fa3;
+$light-main-color:				#97f0f2;
+$dark-main-color:				#2f6f71;
+$second-color:					#d44120;
+$light-second-color:			#ffb6a7;
+$dark-second-color:				#a02708;
+$third-color:					#1b6999;
+
+// Default text.
+$default-text:                  #8b8b8b;
+$link-text:                     $second-color;
+$link-text-hover:               $main-color;
+
+// Media query breakpoints.
+$breakpoint:					616px;
+$tablet-landscape:				1024px;
+$tablet-portrait:				768px;
+$mobile:						480px;
+$desktop:						1200px;
+$large-desktop:					1600px;
+
+// Fonts.
+$font-default: 					'Open sans', sans-serif;
+$font-heading: 					'Montserrat', sans-serif;
