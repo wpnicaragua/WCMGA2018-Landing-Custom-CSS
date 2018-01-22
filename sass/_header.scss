@@ -19,12 +19,20 @@ $header-min-height: 600px;
 		left: 0;
 		display: block;
 		width: 100%;
-		height: 100vh;
+		height: 41vw;
 		min-height: $header-min-height;
-		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/triangulos02.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
+		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_left.png"),
+											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png"),
+											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
+		background-repeat: 	no-repeat,
+												no-repeat,
+												no-repeat;
+		background-position: 	bottom left,
+													bottom right,
+													center center;
+		background-size: 	42vh,
+											42vh,
+											cover;
 		z-index: -1;
 	}
 
@@ -48,7 +56,7 @@ $header-min-height: 600px;
 			width: 25vw;
 			height: 25vw;
 			margin: 0 auto;
-			background-image: url("https://2017.managua.wordcamp.org/files/2017/04/wcmga17-logo.png");
+			background-image: url("https://2018.managua.wordcamp.org/files/2018/01/wcmga18-logo.png");
 			text-indent: -9999px;
           	white-space: nowrap;
 			background-repeat: no-repeat;

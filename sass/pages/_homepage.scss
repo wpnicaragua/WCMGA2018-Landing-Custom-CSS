@@ -12,18 +12,17 @@
 		justify-content: center;
 		align-items: flex-start;
 		align-content: space-around;
-		background-image: 	url("https://2017.managua.wordcamp.org/files/2017/04/before-content-bkg-left.png"),
-							url("https://2017.managua.wordcamp.org/files/2017/04/before-content-bkg-right.png");
-		background-repeat:  repeat-y, repeat-y;
-		background-position: left 0 top 0px, left 100% top 0px;
-		background-size: 310px, 310px;
-		background-attachment: fixed, fixed;
+		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_white.png");
+		background-repeat:  no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
 		background-color: $white;
 
 		&:before {
 			content: '';
 			position: absolute;
-			top: 0;
+			top: -25px;
 			left: 0;
 			display: block;
 			width: 100%;
