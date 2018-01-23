@@ -1,0 +1,143 @@
+/**************************************************************************************************
+ *
+ *  @Section: llamado-a-ponentes
+ *
+***************************************************************************************************/
+.page-slug-llamado-a-ponentes,
+.home.page-slug-llamado-a-ponentes {
+
+	.site-header {
+		height: 25vw;
+		min-height: initial;
+
+		&:before {
+			background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: cover;
+		}
+
+		.site-navigation {
+			display: none;
+		}
+
+		.site-title {
+
+			a {
+				width: 15vw;
+				height: 15vw;
+				background-image: url("https://2018.managua.wordcamp.org/files/2018/01/wcmga18-logo-only.png");
+			}
+		}
+	}
+
+	#after-header-widgets {
+		display: none;
+	}
+
+	#main {
+		padding-bottom: 200px;
+		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/landing-footer-bkg.png");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: auto;
+
+		&:after {
+			display: none;
+		}
+
+		#primary {
+			padding-top: 20px;
+
+			.entry-header {
+				position: absolute;
+				display: block;
+				top: -110px;
+				text-align: center;
+				@include centered-x;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 80%;
+					left: 46%;
+					display: block;
+					border-bottom: 70px solid $second-color;
+					border-left: 5px solid transparent;
+					border-right: 0px solid transparent;
+				  border-top: 5px solid transparent;
+					height: 0;
+					width: 100%;
+					z-index: -1;
+				  @include transform(translate(-50%, -50%) skewX(-10deg) rotate(-3deg));
+				}
+			}
+
+			.entry-title {
+				position: relative;
+				font-size: 50px;
+				font-size: 5rem;
+				font-weight: 700;
+				padding: 0 30px;
+				font-style: italic;
+				white-space: nowrap;
+				color: $default-text;
+				@include transform(rotate(-3deg));
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					display: block;
+					border-bottom: 70px solid $white;
+					border-left: 10px solid transparent;
+					border-right: 0px solid transparent;
+				  border-top: 5px solid transparent;
+					height: 0;
+					width: 100%;
+					z-index: -1;
+				  @include transform(translate(-50%, -50%) skewX(-10deg));
+				}
+			}
+
+			#content {
+				padding-right: initial;
+
+				&:before {
+					display: none;
+				}
+
+				article {
+
+					.entry-content {
+						position: relative;
+						padding-right: 50%;
+
+						div[id^="contact-form-"] {
+							padding: 20px;
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 45%;
+							color: $white;
+							background-color: $light-third-color;
+						}
+					}
+				}
+			}
+		}
+
+		#secondary {
+			display: none;
+		}
+	}
+
+	.site-footer {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+
+}

@@ -15,7 +15,7 @@ body {
 	margin: 0;
 	font-family: $font-default;
 	color: $default-text;
-	font-weight: 300;
+	font-weight: 400;
 	@include font-size(1.6);
 }
 
@@ -52,13 +52,14 @@ h5,
 h6 {
 	font-family: $font-heading;
 	font-weight: 400;
+	color: $main-color;
 }
 
-h1 { @include font-size(2.4); }
-h2 { @include font-size(2); }
-h3 { @include font-size(1.8); }
-h4 { @include font-size(1.6); }
-h5 { @include font-size(1.4); }
+h1 { @include font-size(2.8); }
+h2 { @include font-size(2.4); }
+h3 { @include font-size(2); }
+h4 { @include font-size(1.8); }
+h5 { @include font-size(1.6); }
 
 p { margin: 0 0 10px; }
 
@@ -74,11 +75,11 @@ img {
 		display:inline-block;
 	}
 
-	&.alignleft { 
+	&.alignleft {
 		float: left;
 		margin-right: 20px;
 	}
-	&.alignright { 
+	&.alignright {
 		float: right;
 		margin-left: 20px;
 	}
@@ -127,7 +128,7 @@ hr { border-top: 1px solid rgba($border-gray, 0.25); }
 		background-color: transparent;
 		border: 1px solid $second-color;
 		@include rounded(3px);
-		 
+
 		&:hover,
 		&:focus,
 		&:active {
@@ -174,7 +175,7 @@ hr { border-top: 1px solid rgba($border-gray, 0.25); }
 			&:active {
 				color: $white;
 				border-color: $white;
-			} 
+			}
 		}
 	}
 }

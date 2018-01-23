@@ -6,11 +6,12 @@
 #main {
 	position: relative;
 	display: block;
+	padding: 20px;
 	width: 100%;
 	min-height: 650px;
-	background-color: $main-color;
+	background-color: $white;
 
-	&:before, 
+	&:before,
 	&:after { @include clearfix; }
 
 	&:after { @include clearfix-after; }
@@ -24,9 +25,7 @@
 		display: block;
 		width: 100%;
 		height: 70px;
-		background-color: $main-color;
-		-webkit-transform-origin: 0 0;
-		transform-origin: 0 0;
+		background-color: $white;
 		z-index: 1000;
 		@include transform(skewY(-1.5deg));
 	}
@@ -46,7 +45,7 @@
 		@extend .container;
 
 		article { margin-bottom: 50px;
-			
+
 			.entry-content {
 				padding: 20px 0;
 			}
@@ -89,7 +88,7 @@
 	}
 
 	.widget_wpcom_social_media_icons_widget {
-		
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -105,8 +104,13 @@
 
 #primary,
 #secondary {
-	color: $white;
+	color: $default-text;
 	z-index: 1000;
+
+	p {
+		margin-bottom: 20px;
+		line-height: 1.6;
+	}
 
 	a {
 		text-decoration: none;
@@ -126,7 +130,7 @@
 }
 
 .widget-area.front-page + .site-content > #content {
-	
+
 	&:before {
 		content: 'Últimos Posts';
 		display: inline-block;
@@ -155,7 +159,7 @@
 
 		#content {
 			width: 100%;
-			padding: 0 20px; 
+			padding: 0 20px;
 			min-height: auto;
 		}
 	}

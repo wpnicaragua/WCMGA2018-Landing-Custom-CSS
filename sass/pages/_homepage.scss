@@ -3,59 +3,88 @@
  *  @Section: Homepage
  *
 ***************************************************************************************************/
-#after-header-widgets {
+.home.blog {
 
-	&.front-page {
-		padding: 100px 15%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-		align-content: space-around;
-		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_white.png");
-		background-repeat:  no-repeat;
-		background-position: center center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-color: $white;
+	#after-header-widgets {
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: -25px;
-			left: 0;
-			display: block;
-			width: 100%;
-			height: 70px;
+		.front-page {
+			padding: 100px 15%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+			align-content: space-around;
+			background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_white.png");
+			background-repeat:  no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
 			background-color: $white;
-			-webkit-transform-origin: 0 0;
-			transform-origin: 0 0;
-			z-index: 1000;
-			@include transform(skewY(-1.5deg));
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 70px;
+				background-color: $white;
+				z-index: 1000;
+				@include transform(rotate(-1.5deg));
+			}
+		}
+
+		.widget {
+			text-align: center;
+			padding: 20px;
+
+			.boxes {
+
+				i { @include font-size(5); }
+
+				h2 {
+					color: $third-color;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				.btn { margin-top: 20px; }
+			}
+
+			&:first-child {
+				width: 1px;
+				height: 1px;
+				padding: 0;
+			}
 		}
 	}
 
-	.widget {
-		text-align: center;
-		padding: 20px;
+	#main {
+		background-color: $third-color;
 
-		.boxes {
-
-			i { @include font-size(5); }
-
-			h2 {
-				color: $third-color;
-				text-transform: uppercase;
-				font-weight: bold;
-			}
-
-			.btn { margin-top: 20px; }
+		&:before,
+		&:after {
+			background-color: $third-color;
 		}
 
-		&:first-child {
-			width: 1px;
-			height: 1px;
-			padding: 0;
+		#primary,
+		#secondary {
+			color: $white;
+
+			a {
+				color: $second-color;
+				@include transition;
+
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration: none;
+					color: $light-second-color;
+
+					.thumb { outline: 1px solid $white; }
+				}
+			}
 		}
 	}
 }
@@ -64,7 +93,7 @@
 
 	#after-header-widgets {
 
-		&.front-page {
+		.front-page {
 			display: block;
 			background-image: none;
 		}
