@@ -148,6 +148,8 @@
 		}
 
 		#main {
+			padding-left: initial;
+			padding-right: initial;
 			padding-bottom: 50px;
 
 			#primary {
@@ -163,7 +165,7 @@
 					article {
 
 						.entry-content {
-							padding: 0 20px;
+					    padding: 0 20px;
 
 							div[id^="contact-form-"] {
 								position: relative;
