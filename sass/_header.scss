@@ -3,14 +3,15 @@
  *  @Section: Header
  *
 ***************************************************************************************************/
-$header-height: 43vw;
-$header-min-height: 600px;
+$header-height: 35vw;
+$header-max-height: 600px;
 
 .site-header {
 	position: relative;
 	width: 100%;
 	height: $header-height;
-	min-height: $header-min-height;
+	max-height: $header-max-height;
+	min-height: auto;
 
 	&:before {
 		content: '';
@@ -19,8 +20,9 @@ $header-min-height: 600px;
 		left: 0;
 		display: block;
 		width: 100%;
-		height: 43vw;
-		min-height: $header-min-height;
+		height: $header-height;
+		max-height: $header-max-height;
+		min-height: auto;
 		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_left.png"),
 											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png"),
 											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
@@ -29,7 +31,7 @@ $header-min-height: 600px;
 												no-repeat;
 		background-position: 	bottom left,
 													bottom right,
-													center center;
+													top center;
 		background-size: 	42vh,
 											42vh,
 											cover;
@@ -41,20 +43,20 @@ $header-min-height: 600px;
 		display: inline-block;
 		text-align: center;
 		@include centered-xy;
-		top: 42%;
 	}
 
 	.site-title {
 		display: block;
 
 		a {
+
 			display: block;
-			max-width: 324px;
+			max-width: 270px;
 			min-width: 150px;
-			max-height: 324px;
+			max-height: 270px;
 			min-height: 150px;
-			width: 25vw;
-			height: 25vw;
+			width: 18vw;
+			height: 18vw;
 			margin: 0 auto;
 			background-image: url("https://2018.managua.wordcamp.org/files/2018/01/wcmga18-logo.png");
 			text-indent: -9999px;
@@ -87,14 +89,14 @@ $header-min-height: 600px;
 	.site-header {
 
 		$header-height: 350px;
-		$header-min-height: auto;
+		$header-max-height: auto;
 
 		height: $header-height;
-		min-height: $header-min-height;
+		min-height: $header-max-height;
 
 		&:before {
 			height: $header-height;
-			min-height: $header-min-height;
+			min-height: $header-max-height;
 			background-position: center left 20%;
 		}
 
