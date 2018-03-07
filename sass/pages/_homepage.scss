@@ -7,11 +7,11 @@
 	background-color: $white;
 
 	& + #main {
-		padding-top: 180px;
+		padding-top: 150px;
 	}
 
 	& + #main #secondary {
-		top: 180px;
+		top: 150px;
 	}
 
 	// .front-page {
@@ -178,12 +178,6 @@
 
 
 			.title { color: $fourth-color; }
-		}
-
-		.community-img {
-			-webkit-box-shadow: -10px 10px 0px 0px $main-color;
-			-moz-box-shadow: -10px 10px 0px 0px $main-color;
-			box-shadow: -10px 10px 0px 0px $main-color;
 		}
 	}
 }

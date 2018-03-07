@@ -3,7 +3,8 @@
  *  @Section: Forms
  *
 ***************************************************************************************************/
-.site-content {
+.site-content,
+.widget-area {
   $field-height: 40px;
 
   input:not([type='button']):not([type='submit']),
