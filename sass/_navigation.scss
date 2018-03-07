@@ -8,12 +8,13 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: $third-color;
+	background-color: $white;
 	z-index: 1050;
 
 	.assistive-text { display:  none; }
 
-	.menu-main-container { @extend .container; }
+	.menu-main-container,
+	.menu-premenu-container { @extend .container; }
 
 	ul {
 		margin: 0;
@@ -23,7 +24,8 @@
 		li { margin: 0; }
 	}
 
-	#menu-main {
+	#menu-main,
+	#menu-premenu {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -34,7 +36,7 @@
 		> .menu-item {
 
 			a {
-				color: $white;
+				color: $default-text;
 				padding: 20px 15px;
 				text-transform: uppercase;
 				font-family: $font-heading;
