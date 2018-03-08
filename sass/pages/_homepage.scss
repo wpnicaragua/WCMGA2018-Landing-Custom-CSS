@@ -190,6 +190,17 @@
 
 @media only screen and (max-width: $breakpoint) {
 
+	.module {
+
+		&-intro {
+
+			.intro-header {
+		    width: 90%;
+    		float: right;
+			}
+		}
+	}
+
 	#after-header-widgets {
 
 		// .front-page {
