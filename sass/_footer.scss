@@ -107,4 +107,33 @@
 
 @media only screen and (max-width: $breakpoint) {
 
+  .site-info {
+    background-position: bottom left -70px, bottom right -70px, top center !important;
+
+    &:before {
+      top: 20px !important;
+    }
+
+    &:after {
+      bottom: 85px !important;
+    }
+
+    .site-info-generator,
+    .site-info-network {
+      padding: 5px 10px;
+      color: $main-color !important;
+      background-color: $white !important;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .site-info-generator {
+      margin-left: 0 !important;
+      bottom: 30px !important;
+    }
+
+    .site-info-network {
+      margin-left: 0 !important;
+    }
+  }
 }
