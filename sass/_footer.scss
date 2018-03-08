@@ -49,7 +49,7 @@
 											url("https://2018.managua.wordcamp.org/files/2018/03/waves-bkg.png");
 		background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: bottom left, bottom right, top center;
-    background-size: 28vh, 28vh, cover;
+    background-size: 250px, 250px, cover;
 
     &:before {
     	content: '';
@@ -110,7 +110,8 @@
   .site-footer {
 
     .site-info {
-      background-position: bottom left -70px, bottom right -70px, top center;
+      background-position:  bottom left -60px, bottom right -20px, top center;
+      background-size: 180px, 180px, cover;
 
       &:before {
         top: 20px;
