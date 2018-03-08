@@ -213,14 +213,15 @@
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
+    padding: 0 10%;
 
 		.sponsor-level {
 	    position: relative;
-	    padding: 70px 0 40px;
+	    padding: 70px 20px 40px;
 			display: -ms-flexbox;
 	    display: flex;
 	    -ms-flex-direction: row;
@@ -234,6 +235,7 @@
 	    -ms-flex-line-pack: stretch;
 	    align-content: stretch;
 	    width: 50%;
+	    margin-bottom: 50px;
 
 			&:before,
 			&:after { @include clearfix; }
@@ -263,7 +265,7 @@
 			&.platinium { width: 100%;
 
 				.sponsor-level-title {
-					@include font-size(3.5);
+					@include font-size(3.2);
 				}
 
 				.sponsor-logo { flex-basis: 50%; }
