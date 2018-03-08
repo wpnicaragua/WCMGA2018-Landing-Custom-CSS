@@ -11,7 +11,7 @@ $header-max-height: 600px;
 	width: 100%;
 	height: $header-height;
 	max-height: $header-max-height;
-	min-height: auto;
+	min-height: 350px;
 
 	&:before {
 		content: '';

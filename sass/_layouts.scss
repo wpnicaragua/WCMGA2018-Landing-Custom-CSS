@@ -22,18 +22,17 @@
   }
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $tablet-portrait) {
 
-.col {
-  display: block;
-  float: none;
-  margin: 0 0 50px;
+  .col {
+    display: block;
+    float: none;
+    margin: 0 0 50px;
 
-  &-half,
-  &-one_third,
-  &-two_third {
-    width: 100%;
+    &-half,
+    &-one_third,
+    &-two_third {
+      width: 100%;
+    }
   }
-}
-
 }
