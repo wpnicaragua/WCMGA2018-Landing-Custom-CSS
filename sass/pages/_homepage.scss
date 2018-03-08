@@ -89,6 +89,8 @@
 			position: absolute;
 			top: -10vh;
 			display: block;
+	    text-align: center;
+    	white-space: nowrap;
 			@include centered-x;
 		}
 	}
