@@ -32,8 +32,8 @@ $header-max-height: 600px;
 		background-position: 	bottom left,
 													bottom right,
 													top center;
-		background-size: 	42vh,
-											42vh,
+		background-size: 	25vw,
+											25vw,
 											cover;
 		z-index: -1;
 	}
@@ -83,7 +83,7 @@ $header-max-height: 600px;
 	}
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $tablet-landscape) {
 
 	.site-header {
 
@@ -96,8 +96,7 @@ $header-max-height: 600px;
 		&:before {
 			height: $header-height;
 			min-height: $header-max-height;
-			background-position: 	bottom left -60px, bottom right -20px, top center;
-			background-size: 	30vh, 30vh, cover;
+			background-size: 180px, 180px, cover;
 		}
 
 		.site-description { @include font-size(1.6); }
@@ -110,7 +109,7 @@ $header-max-height: 600px;
 	.site-header {
 
 		&:before {
-			background-size: 20vh, 20vh, cover;
+			background-position: 	bottom left -60px, bottom right -20px, top center;
 		}
 	}
 }

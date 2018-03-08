@@ -87,7 +87,7 @@
 
 		.btn {
 			position: absolute;
-			top: -10vh;
+			top: -120px;
 			display: block;
 	    text-align: center;
     	white-space: nowrap;
@@ -191,6 +191,11 @@
 @media only screen and (max-width: $breakpoint) {
 
 	.module {
+
+		&-ticket { padding: 0;
+
+			.btn { top: -80px; }
+		}
 
 		&-intro {
 
