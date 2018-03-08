@@ -21,3 +21,19 @@
     width: 66.666%;
   }
 }
+
+@media only screen and (max-width: $breakpoint) {
+
+.col {
+  display: block;
+  float: none;
+  margin: 0 0 50px;
+
+  &-half,
+  &-one_third,
+  &-two_third {
+    width: 100%;
+  }
+}
+
+}

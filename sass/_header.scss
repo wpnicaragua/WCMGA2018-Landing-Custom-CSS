@@ -22,7 +22,7 @@ $header-max-height: 600px;
 		width: 100%;
 		height: $header-height;
 		max-height: $header-max-height;
-		min-height: auto;
+		min-height: 350px;
 		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_left.png"),
 											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png"),
 											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
@@ -96,14 +96,11 @@ $header-max-height: 600px;
 		&:before {
 			height: $header-height;
 			min-height: $header-max-height;
-			background-position: center left 20%;
+			background-position: 	bottom left -60px, bottom right -20px, top center;
+			background-size: 	30vh, 30vh, cover;
 		}
 
 		.site-description { @include font-size(1.6); }
 	}
 
-	.widget-area.front-page {
-
-		.registration-button { top: -80px; }
-	}
 }

@@ -221,7 +221,7 @@ hr { border-top: 1px solid rgba($border-gray, 0.25); }
 	.mobile { display: block; }
 
 	.btn {
-		margin-bottom: 5px;
-		padding: 10px 15px;
+		margin-bottom: 5px !important;
+		padding: 10px 15px !important;
 	}
 }
