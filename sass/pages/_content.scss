@@ -338,10 +338,6 @@
 			  }
 			}
 		}
-
-		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
-			bottom: 100px;
-		}
 	}
 }
 
@@ -354,6 +350,10 @@
 			.sponsor-level{
 				width: 100%;
 			}
+		}
+
+		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+			bottom: 100px;
 		}
 	}
 }
