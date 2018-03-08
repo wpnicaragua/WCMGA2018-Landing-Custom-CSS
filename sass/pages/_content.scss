@@ -272,6 +272,32 @@
 			}
 		}
 	}
+
+	&.widget_wpcom_social_media_icons_widget {
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		.genericon {
+			color: $white;
+			font-size: 35px;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $third-color !important;
+			}
+		}
+	}
+
+	&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+		position: absolute;
+		bottom: 70px;
+		z-index: 1000;
+		@include centered-x;
+	}
 }
 
 @media only screen and (max-width: $tablet-portrait) {
