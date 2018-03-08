@@ -104,3 +104,13 @@ $header-max-height: 600px;
 	}
 
 }
+
+@media only screen and (max-width: $mobile) {
+
+	.site-header {
+
+		&:before {
+			background-size: 20vh, 20vh, cover;
+		}
+	}
+}
