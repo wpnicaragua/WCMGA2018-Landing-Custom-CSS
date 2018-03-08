@@ -13,9 +13,9 @@ $header-max-height: 600px;
 	max-height: $header-max-height;
 	min-height: 350px;
 
-	&:before {
+	&:before,
+	&:after {
 		content: '';
-		position: fixed;
 		top: 0;
 		left: 0;
 		display: block;
@@ -23,19 +23,27 @@ $header-max-height: 600px;
 		height: $header-height;
 		max-height: $header-max-height;
 		min-height: 350px;
+		z-index: -1;
+	}
+
+	&:before {
+		position: absolute;
+		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	&:after {
+		position: fixed;
 		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_left.png"),
-											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png"),
-											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
+											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png");
 		background-repeat: 	no-repeat,
-												no-repeat,
 												no-repeat;
 		background-position: 	bottom left,
-													bottom right,
-													top center;
+													bottom right;
 		background-size: 	25vw,
-											25vw,
-											cover;
-		z-index: -1;
+											25vw;
 	}
 
 	hgroup {
@@ -93,11 +101,13 @@ $header-max-height: 600px;
 		height: $header-height;
 		min-height: $header-max-height;
 
-		&:before {
+		&:before,
+		&:after {
 			height: $header-height;
 			min-height: $header-max-height;
-			background-size: 180px, 180px, cover;
 		}
+
+		&:after { background-size: 180px, 180px; }
 
 		.site-description { @include font-size(1.6); }
 	}
@@ -108,7 +118,7 @@ $header-max-height: 600px;
 
 	.site-header {
 
-		&:before {
+		&:after {
 			background-position: 	bottom left -60px, bottom right -20px, top center;
 		}
 	}
