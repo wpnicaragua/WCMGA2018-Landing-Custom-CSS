@@ -82,8 +82,7 @@
 
 	&:after { @include clearfix-after; }
 
-	&-ticket {
-		padding: 0;
+	&-ticket { padding: 0;
 
 		.btn {
 			position: absolute;
@@ -188,14 +187,20 @@
 	padding-top: 0;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $tablet-portrait) {
 
 	.module {
 
-		&-ticket { padding: 0;
+		&-ticket {
 
 			.btn { top: -80px; }
 		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+
+	.module {
 
 		&-intro {
 
