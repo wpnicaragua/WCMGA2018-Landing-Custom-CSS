@@ -107,33 +107,32 @@
 
 @media only screen and (max-width: $breakpoint) {
 
-  .site-info {
-    background-position: bottom left -70px, bottom right -70px, top center;
+  .site-footer {
 
-    &:before {
-      top: 20px;
-    }
+    .site-info {
+      background-position: bottom left -70px, bottom right -70px, top center;
 
-    &:after {
-      display: none;
-    }
+      &:before {
+        top: 20px;
+      }
 
-    .site-info-generator,
-    .site-info-network {
-      padding: 5px 10px;
-      color: $main-color;
-      background-color: $white;
-      text-align: center;
-      white-space: nowrap;
-    }
+      &:after {
+        display: none;
+      }
 
-    .site-info-generator {
-      margin-left: 0;
-      bottom: 55px;
-    }
+      .site-info-generator,
+      .site-info-network {
+        padding: 5px 10px;
+        margin-left: 0;
+        color: $main-color;
+        background-color: $white;
+        text-align: center;
+        white-space: nowrap;
+      }
 
-    .site-info-network {
-      margin-left: 0;
+      .site-info-generator {
+        bottom: 55px;
+      }
     }
   }
 }

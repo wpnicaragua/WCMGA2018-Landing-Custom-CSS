@@ -338,3 +338,16 @@
 		}
 	}
 }
+
+@media only screen and (max-width: $breakpoint) {
+
+	.widget {
+
+		&.wcb_widget_sponsors {
+
+			.sponsor-level{
+				width: 100%;
+			}
+		}
+	}
+}
