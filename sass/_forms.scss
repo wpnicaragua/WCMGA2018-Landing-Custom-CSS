@@ -7,7 +7,7 @@
 .widget-area {
   $field-height: 40px;
 
-  input:not([type='button']):not([type='submit']),
+  input:not([type='button']):not([type='submit']):not([type="radio"]):not([type="checkbox"]),
   textarea {
     padding: 12px;
     width: 100%;
@@ -28,7 +28,7 @@
     position: relative;
     width: 100%;
     height: $field-height;
-    padding: 12px;
+    padding: 5px  12px;
     border: 1px solid $border-gray;
     background: $white;
     z-index: 2;
