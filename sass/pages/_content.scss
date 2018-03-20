@@ -48,6 +48,44 @@
 					-moz-box-shadow: -10px 10px 0px 0px $main-color;
 					box-shadow: -10px 10px 0px 0px $main-color;
 				}
+
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					color: $main-color;
+					text-transform: uppercase;
+				}
+
+				table {
+					border-collapse: collapse;
+					margin: 0 0 1.5em;
+					width: 100%;
+
+					tr { border-bottom: 1px solid $border-gray; }
+
+					td,
+					th { padding: 15px 10px !important; }
+
+					td { vertical-align: top; }
+
+					thead {
+
+						th {
+							text-align: left;
+							font-weight: 700;
+							color: $black;
+							text-transform: uppercase;
+						}
+					}
+
+					tbody {
+						border-top: 2px solid $main-color !important;
+						tr:nth-child(2n+1) { background: rgba($light-main-color, 0.1) none repeat scroll 0 0 !important; }
+					}
+				}
 			}
 
 			.byline { display: none; }
@@ -130,6 +168,136 @@
 		}
 	}
 }
+
+.tix_tickets_table {
+
+	.tix-right {
+
+		label {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.wcpt-schedule {
+	width: calc(100% - 25px);
+		margin-left: 25px;
+		margin-bottom: 80px;
+
+		thead {
+			background-color: $main-color;
+
+			th { color: $white; }
+		}
+
+	.wcpt-time {
+		color: $black;
+		font-weight: 700;
+	}
+
+	.wcb-track-charlas:not([colspan='2']):before,
+	.wcb-track-talleres:not([colspan='2']):before {
+		display: block;
+	    font-size: small;
+	    color: $main-color;
+	}
+
+	.wcb-track-charlas:not([colspan='2']):before { content: 'Charla'; }
+
+	.wcb-track-talleres:not([colspan='2']):before { content: 'Taller'; }
+
+	.wcb-track-developers:after,
+	.wcb-track-marketing:after,
+	.wcb-track-negocios:after {
+	    display: block;
+	    font-size: small;
+	}
+
+	.wcb-track-developers:after { content: 'Track: Developers'; }
+
+	.wcb-track-marketing:after { content: 'Track: Diseño, Marketing & SEO'; }
+
+	.wcb-track-negocios:after { content: 'Track: Negocios'; }
+
+	.wcb-session-registro {
+
+		.wcpt-session-title:after {
+			content: '\1F39F';
+			font-size: 22px;
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	.wcb-session-inauguracion-del-evento,
+	.wcb-session-rifas-y-premios-del-dia,
+	.wcb-session-rifas-y-premios-del-dia-2 {
+
+		.wcpt-session-title:after {
+		    content: '\1F4E3';
+		    font-size: 22px;
+		    margin-left: 5px;
+		    vertical-align: middle;
+		}
+	}
+
+	.wcpt-session-speakers {
+
+		a {
+		    font-style: italic;
+		    font-size: 14px;
+		    color: #2f3436 !important;
+		}
+
+		&:before,
+		&:after { @include clearfix; }
+
+		&:after { @include clearfix-after; }
+	}
+
+	.global-session {
+		color: $black;
+		font-weight: 700;
+		background-color: rgba($light-second-color, 0.1) !important;
+	}
+
+	.wcb-session-almuerzo,
+	.wcb-session-almuerzo-2 {
+
+		.wcpt-session-title:after {
+		    content: '\1F354';
+		    font-size: 22px;
+		    margin-left: 5px;
+		    vertical-align: middle;
+		}
+	}
+
+	.wcb-session-refrigerio,
+	.wcb-session-refrigerio-2 {
+		color: $black;
+
+		.wcpt-session-title:after {
+		    content: '\2615';
+		    font-size: 22px;
+		    margin-left: 5px;
+		    vertical-align: middle;
+		}
+	}
+
+	.wcb-session-panel-wordpress-deployment {
+
+		.wcpt-session-title:after {
+		    content: '\1F465';
+		    font-size: 22px;
+		    margin-left: 5px;
+		    vertical-align: middle;
+		    text-decoration: none;
+		    display: inline-block;
+		}
+	}
+}
+
 
 .module-sponsors {
 	background-image: url("https://2018.managua.wordcamp.org/files/2018/03/waves.png");
