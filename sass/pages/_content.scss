@@ -470,13 +470,14 @@
 	}
 }
 
+
 /*================================
 =            speakers           =
 ================================*/
 
 .wcorg-speaker {
     padding-top: 60px;
-} 
+}
 
 .wcorg-speaker-description{
 
@@ -498,31 +499,31 @@
 
 .wcorg-sponsor {
     padding-top: 30px;
-} 
+}
 
-.wcorg-sponsor-description{
+	.wcorg-sponsor-description{
 
-	p:nth-child(2){
-		padding-top: 40px;
+		p:nth-child(2){
+			padding-top: 40px;
 
-	}
+		}
 
-	img{
-		width: 60%;
-		margin-top: 20px;
-	}
+		img{
+			width: 60%;
+			margin-top: 20px;
+		}
 }
 
 .wcorg-sponsor-level-{
 	&gold, &silver, &bronze, &in-kinds, &con-el-apoyo-de, &media-partners{
+
 		h2{
 			font-size: 4rem;
-			margin-top: 10rem;
-			margin-bottom: 0px;
+			
 			border-top: 2px solid;
 			border-bottom: 2px solid;
 			text-align: center;
-			padding: 5px 5px;
+			
 
 		}
 
@@ -531,8 +532,7 @@
 				font-size: 1.5rem;
 				border:none;
 				text-align: left;
-				margin:0;
-				padding: 0;
+				
 			}
 		}
 	}
@@ -571,7 +571,7 @@
 				display: block;
 				text-align: center;
 
-				&-title { width: 100%; }
+				&-title{ width: 100%; }
 
 				.sponsor-logo {
 					text-align: center;
