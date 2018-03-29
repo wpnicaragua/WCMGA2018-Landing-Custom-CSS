@@ -476,20 +476,32 @@
 ================================*/
 
 .wcorg-speaker {
-    padding-top: 60px;
+    padding-top: 60px; 
 }
 
 .wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
 
-	p:nth-child(2){
-		padding-top: 40px;
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 70%;
+				padding-left: 10px;
+			}
+		}		
 
+		img.avatar{
+			width: auto;
+			height: 30%;
+			margin: 10px 5px 10px 0;
+			
+		}
 	}
-
-	img{
-		width: 40%;
-	}
-}
 
 /*=====  End of Section comment block  ======*/
 
@@ -580,9 +592,58 @@
 			}
 		}
 	}
+
+	.wcorg-speaker {
+    padding-top: 70px; 
+    margin-top: 20px;
+	}
+
+	.wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
+
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 85%;
+				padding-left: 10px;
+			}
+		}		
+
+		img.avatar{
+			width: auto;
+			height: 25%;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint) {
+	
+	#primary {
+
+		#content {
+			width: 100%;
+			padding: 0 20px;
+			min-height: auto;
+		}
+	}
+
+	#secondary {
+		position: static;
+		width: 100%;
+		height: auto;
+		padding: 0 20px;
+
+		#primary-sidebar {
+			padding: 0;
+		}
+	}
 
 	.widget {
 
@@ -595,6 +656,30 @@
 
 		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
 			bottom: 100px;
+		}
+	}
+
+	.wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
+
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 70%;
+				padding-left: 10px;
+			}
+		}		
+
+		img.avatar{
+			width: auto;
+			height: 30%;
+			margin: 10px 5px 10px 0;
+			
 		}
 	}
 }
