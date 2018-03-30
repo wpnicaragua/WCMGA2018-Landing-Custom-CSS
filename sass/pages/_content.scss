@@ -470,6 +470,98 @@
 	}
 }
 
+
+/*================================
+=            speakers           =
+================================*/
+
+.wcorg-speaker {
+    padding-top: 60px; 
+}
+
+.wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
+
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 70%;
+				padding-left: 10px;
+			}
+		}		
+
+		img.avatar{
+			width: auto;
+			height: 30%;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
+/*=====  End of Section comment block  ======*/
+
+/*================================
+=            sponsors           =
+================================*/
+
+.wcorg-sponsor {
+    padding-top: 30px;
+}
+
+	.wcorg-sponsor-description{
+
+		p:nth-child(2){
+			padding-top: 40px;
+
+		}
+
+		img{
+			width: 60%;
+			margin-top: 20px;
+		}
+}
+
+.wcorg-sponsor-level-{
+	&gold, &silver, &bronze, &in-kinds, &con-el-apoyo-de, &media-partners{
+
+		h2{
+			font-size: 4rem;
+			
+			border-top: 2px solid;
+			border-bottom: 2px solid;
+			text-align: center;
+			
+
+		}
+
+		.wcorg-sponsor-description{
+			h2{
+				font-size: 1.5rem;
+				border:none;
+				text-align: left;
+				
+			}
+		}
+	}
+}
+
+.wcorg-organizer-description{
+		img.avatar{
+			width: 45%;
+			height: auto;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
+/*=====  End of Section comment block  ======*/
+
+
 @media only screen and (max-width: $tablet-portrait) {
 
 	#primary {
@@ -500,7 +592,7 @@
 				display: block;
 				text-align: center;
 
-				&-title { width: 100%; }
+				&-title{ width: 100%; }
 
 				.sponsor-logo {
 					text-align: center;
@@ -509,9 +601,67 @@
 			}
 		}
 	}
+
+	.wcorg-speaker {
+    padding-top: 70px; 
+    margin-top: 20px;
+	}
+
+	.wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
+
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 85%;
+				padding-left: 10px;
+			}
+		}		
+
+		img.avatar{
+			width: auto;
+			height: 25%;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
+	.wcorg-organizer-description{
+		img.avatar{
+			width: 45%;
+			height: auto;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint) {
+	
+	#primary {
+
+		#content {
+			width: 100%;
+			padding: 0 20px;
+			min-height: auto;
+		}
+	}
+
+	#secondary {
+		position: static;
+		width: 100%;
+		height: auto;
+		padding: 0 20px;
+
+		#primary-sidebar {
+			padding: 0;
+		}
+	}
 
 	.widget {
 
@@ -524,6 +674,39 @@
 
 		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
 			bottom: 100px;
+		}
+	}
+
+	.wcorg-speaker-description{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content:flex-start;
+
+		p{
+			
+			font-size: 1.5rem;
+			width: 100%;
+			&:nth-child(2){
+				width: 70%;
+				padding-left: 10px;
+			}
+		}		
+
+		img.avatar{
+			width: auto;
+			height: 50%;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
+	.wcorg-organizer-description{
+		img.avatar{
+			width: 50%;
+			height: auto;
+			margin: 10px 5px 10px 0;
+			
 		}
 	}
 }
