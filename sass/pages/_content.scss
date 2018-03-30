@@ -550,6 +550,15 @@
 	}
 }
 
+.wcorg-organizer-description{
+		img.avatar{
+			width: 45%;
+			height: auto;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
 /*=====  End of Section comment block  ======*/
 
 
@@ -621,6 +630,15 @@
 			
 		}
 	}
+
+	.wcorg-organizer-description{
+		img.avatar{
+			width: 45%;
+			height: auto;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint) {
@@ -677,7 +695,16 @@
 
 		img.avatar{
 			width: auto;
-			height: 30%;
+			height: 50%;
+			margin: 10px 5px 10px 0;
+			
+		}
+	}
+
+	.wcorg-organizer-description{
+		img.avatar{
+			width: 50%;
+			height: auto;
 			margin: 10px 5px 10px 0;
 			
 		}
