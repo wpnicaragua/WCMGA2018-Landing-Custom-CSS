@@ -13,63 +13,6 @@
 	& + #main #secondary {
 		top: 150px;
 	}
-
-	// .front-page {
-	// 	padding: 100px 15%;
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	justify-content: center;
-	// 	align-items: flex-start;
-	// 	align-content: space-around;
-	// 	background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_white.png");
-	// 	background-repeat:  no-repeat;
-	// 	background-position: center center;
-	// 	background-size: cover;
-	// 	background-attachment: fixed;
-
-	// }
-
-	// .widget {
-	// 	text-align: center;
-	// 	padding: 20px;
-
-	// 	.boxes {
-
-	// 		i { @include font-size(5); }
-
-	// 		h2 {
-	// 			color: $third-color;
-	// 			text-transform: uppercase;
-	// 			font-weight: bold;
-	// 		}
-
-	// 		.btn { margin-top: 20px; }
-	// 	}
-
-	// 	&:first-child {
-	// 		width: 1px;
-	// 		height: 1px;
-	// 		padding: 0;
-	// 	}
-	// }
-// }
-
-// #main { padding: 0;
-
-// 	#primary { padding: 0;
-
-// 		#content {
-// 			width: 100%;
-// 			padding-right: 0;
-
-// 			.entry-header { display: none; }
-
-// 			.entry-content { padding: 0; }
-// 		}
-// 	}
-
-// 	#secondary { display: none; }
-// }
 }
 
 .module {
@@ -211,12 +154,6 @@
 		}
 	}
 
-	#after-header-widgets {
-
-		// .front-page {
-		// 	display: block;
-		// 	background-image: none;
-		// }
-	}
+	#after-header-widgets {}
 
 }
