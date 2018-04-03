@@ -178,6 +178,166 @@
 			margin-bottom: 10px;
 		}
 	}
+
+	.tix-row-allergy {
+		.tix-left {
+			position: relative;
+			text-indent: -99999px;
+			white-space: nowrap;
+    	overflow: hidden;
+    	height: 150px;
+
+
+			&:before {
+				content: "¿Tienes una alergia que pone en peligro tu vida y que affectaría tu experiencia en WordCamp? *";
+				text-indent: 0;
+			  display: block;
+			  white-space: initial;
+			  line-height: initial;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  padding: 15px 10px !important;
+			}
+		}
+
+		.tix-right {
+			label:first-child {
+				position: relative;
+				text-indent: -99999px;
+				white-space: nowrap;
+	    	overflow: hidden;
+	    	display: block;
+
+	    	&:before {
+					content: "Si";
+					text-indent: 0;
+				  display: block;
+				  white-space: initial;
+				  line-height: initial;
+				  position: absolute;
+				  top: 0;
+				  left: 20px;
+				  padding: 0;
+				}
+
+				input {
+					text-indent: 0;
+					position: absolute;
+				  top: 0;
+				  left: 0;
+				}
+			}
+		}
+	}
+
+	.tix-row-accommodations {
+		.tix-left {
+			position: relative;
+			text-indent: -99999px;
+			white-space: nowrap;
+    	overflow: hidden;
+    	height: 150px;
+
+
+			&:before {
+				content: "¿Necesita asistencia especial, como un intérprete de lenguaje de señas o acceso para sillas de ruedas, para participar en WordCamp? *";
+				text-indent: 0;
+			  display: block;
+			  white-space: initial;
+			  line-height: initial;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  padding: 15px 10px !important;
+			}
+		}
+
+		.tix-right {
+			label:first-child {
+				position: relative;
+				text-indent: -99999px;
+				white-space: nowrap;
+	    	overflow: hidden;
+	    	display: block;
+
+	    	&:before {
+					content: "Si";
+					text-indent: 0;
+				  display: block;
+				  white-space: initial;
+				  line-height: initial;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  padding: 0 0 0 20px;
+				}
+
+				input {
+					text-indent: 0;
+					position: absolute;
+				  top: 0;
+				  left: 0;
+				}
+			}
+		}
+	}
+
+	.tix-row-coc {
+		.tix-left {
+			position: relative;
+			text-indent: -99999px;
+			white-space: nowrap;
+    	overflow: hidden;
+    	height: 150px;
+
+
+			&:before {
+				content: "¿Aceptas seguir el código de conducta del evento? *";
+				text-indent: 0;
+			  display: block;
+			  white-space: initial;
+			  line-height: initial;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  padding: 15px 10px !important;
+			}
+		}
+
+		.tix-right {
+			label:first-child {
+				position: relative;
+				text-indent: -99999px;
+				white-space: nowrap;
+	    	overflow: hidden;
+	    	display: block;
+
+	    	&:before {
+					content: "Si";
+					text-indent: 0;
+				  display: block;
+				  white-space: initial;
+				  line-height: initial;
+				  position: absolute;
+				  top: 0;
+				  left: 20px;
+				  padding: 0;
+				}
+
+				input {
+					text-indent: 0;
+					position: absolute;
+				  top: 0;
+				  left: 0;
+				}
+			}
+		}
+	}
+
+	.tix-row-coc .tix-left {
+		content: "¿Aceptas seguir el código de conducta del evento?";
+	}
 }
 
 .wcpt-schedule {
@@ -476,7 +636,7 @@
 ================================*/
 
 .wcorg-speaker {
-    padding-top: 60px; 
+    padding-top: 60px;
 }
 
 .wcorg-speaker-description{
@@ -486,20 +646,20 @@
 		align-content:flex-start;
 
 		p{
-			
+
 			font-size: 1.5rem;
 			width: 100%;
 			&:nth-child(2){
 				width: 70%;
 				padding-left: 10px;
 			}
-		}		
+		}
 
 		img.avatar{
 			width: auto;
 			height: 30%;
 			margin: 10px 5px 10px 0;
-			
+
 		}
 	}
 
@@ -531,11 +691,11 @@
 
 		h2{
 			font-size: 4rem;
-			
+
 			border-top: 2px solid;
 			border-bottom: 2px solid;
 			text-align: center;
-			
+
 
 		}
 
@@ -544,7 +704,7 @@
 				font-size: 1.5rem;
 				border:none;
 				text-align: left;
-				
+
 			}
 
 			img{
@@ -553,15 +713,6 @@
 		}
 	}
 }
-
-.wcorg-organizer-description{
-		img.avatar{
-			width: 30%;
-			height: auto;
-			margin: 10px 5px 10px 0;
-			
-		}
-	}
 
 /*=====  End of Section comment block  ======*/
 
@@ -607,7 +758,7 @@
 	}
 
 	.wcorg-speaker {
-    padding-top: 70px; 
+    padding-top: 70px;
     margin-top: 20px;
 	}
 
@@ -618,20 +769,20 @@
 		align-content:flex-start;
 
 		p{
-			
+
 			font-size: 1.5rem;
 			width: 100%;
 			&:nth-child(2){
 				width: 85%;
 				padding-left: 10px;
 			}
-		}		
+		}
 
 		img.avatar{
 			width: auto;
 			height: 25%;
 			margin: 10px 5px 10px 0;
-			
+
 		}
 	}
 
@@ -640,13 +791,13 @@
 			width: 35%;
 			height: auto;
 			margin: 10px 5px 10px 0;
-			
+
 		}
 	}
 }
 
 @media only screen and (max-width: $breakpoint) {
-	
+
 	#primary {
 
 		#content {
@@ -688,20 +839,20 @@
 		align-content:flex-start;
 
 		p{
-			
+
 			font-size: 1.5rem;
 			width: 100%;
 			&:nth-child(2){
 				width: 70%;
 				padding-left: 10px;
 			}
-		}		
+		}
 
 		img.avatar{
 			width: auto;
 			height: 50%;
 			margin: 10px 5px 10px 0;
-			
+
 		}
 	}
 
@@ -710,7 +861,7 @@
 			width: 35%;
 			height: auto;
 			margin: 10px 5px 10px 0;
-			
+
 		}
 	}
 }
