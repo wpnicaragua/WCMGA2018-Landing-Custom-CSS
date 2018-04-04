@@ -631,39 +631,7 @@
 }
 
 
-/*================================
-=            speakers           =
-================================*/
 
-.wcorg-speaker {
-    padding-top: 60px;
-}
-
-.wcorg-speaker-description{
-		display:flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-content:flex-start;
-
-		p{
-
-			font-size: 1.5rem;
-			width: 100%;
-			&:nth-child(2){
-				width: 70%;
-				padding-left: 10px;
-			}
-		}
-
-		img.avatar{
-			width: auto;
-			height: 30%;
-			margin: 10px 5px 10px 0;
-
-		}
-	}
-
-/*=====  End of Section comment block  ======*/
 
 /*================================
 =            sponsors           =
@@ -714,7 +682,7 @@
 	}
 }
 
-/*=====  End of Section comment block  ======*/
+
 
 
 @media only screen and (max-width: $tablet-portrait) {
