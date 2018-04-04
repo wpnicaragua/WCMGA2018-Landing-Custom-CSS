@@ -1,0 +1,59 @@
+/**************************************************************************************************
+ *
+ *  @Section: Organizers
+ *
+***************************************************************************************************/
+.page-slug-organizadores {
+
+	#primary {
+		#content {
+	    padding-right: 0;
+		}
+	}
+
+	#secondary {
+		display: none;
+	}
+
+	.wcorg-organizers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	}
+
+	.wcorg-organizer {
+		margin-bottom: 25px;
+		width: 100%;
+		display: inline-block;
+		float: left;
+
+		@media only screen and (min-width: $desktop) {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	    max-width: 50%;
+		}
+
+		&:before,
+		&:after { @include clearfix; }
+
+		&:after { @include clearfix-after; }
+	}
+
+	.wcorg-organizer-description{
+		position: relative;
+		padding-left: 150px;
+		min-height: 150px;
+
+		img.avatar{
+			position: absolute;
+			top: 0;
+			left: 10px;
+			width: 100px;
+			height: auto;
+			margin: 10px 5px 10px 0;
+		}
+	}
+}
