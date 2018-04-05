@@ -697,14 +697,20 @@
 	}
 }
 
-/*.before-content-widgets{
-	display:none;
-}*/
+/*================================
+=      fixing white spaces      =
+================================*/
 
-/*#main{
-	margin-top: 0;
-	padding-top: 0!important; 
-}*/
+#main{
+	padding-top: 0!important;
+	}
+
+.home{
+	#main{
+		padding-top: 150px!important;
+	}
+}
+
 
 
 @media only screen and (max-width: $tablet-portrait) {
