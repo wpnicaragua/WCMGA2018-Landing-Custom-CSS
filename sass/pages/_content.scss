@@ -697,6 +697,16 @@
 	}
 }
 
+/*.before-content-widgets{
+	display:none;
+}*/
+
+#main{
+	margin-top: 0;
+	padding-top: 0!important; 
+}
+
+
 @media only screen and (max-width: $tablet-portrait) {
 
 	#primary {
