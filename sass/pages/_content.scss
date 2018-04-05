@@ -683,7 +683,19 @@
 }
 
 
+/*================================
+=            Gallery acerca      =
+================================*/
 
+
+.page-slug-acerca{
+
+	.gallery{
+		display: flex;
+		justify-content:space-around;
+
+	}
+}
 
 @media only screen and (max-width: $tablet-portrait) {
 
@@ -762,6 +774,10 @@
 
 		}
 	}
+
+	
+	
+
 }
 
 @media only screen and (max-width: $breakpoint) {
