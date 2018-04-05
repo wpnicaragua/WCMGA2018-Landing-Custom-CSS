@@ -51,6 +51,8 @@
 			> .sub-menu {
 				display: none;
 				@include transition;
+				a{color:$white;}
+
 			}
 
 			&.menu-item-has-children {
@@ -81,6 +83,7 @@
 							&:active {
 								color: $second-color;
 								background-color: $third-color;
+								
 							}
 						}
 					}
