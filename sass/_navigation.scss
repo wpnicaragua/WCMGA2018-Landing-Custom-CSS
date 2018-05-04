@@ -4,6 +4,7 @@
  *
 ***************************************************************************************************/
 .site-navigation {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -83,7 +84,7 @@
 							&:active {
 								color: $second-color;
 								background-color: $third-color;
-								
+
 							}
 						}
 					}
